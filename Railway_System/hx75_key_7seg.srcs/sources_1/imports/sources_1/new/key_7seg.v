@@ -11,10 +11,12 @@ module hx75_key_7seg(
 	
 	wire[3:0] key_value;
 	wire key_valid;
+	//数码管对应值
 	wire [15:0] start_station;
 	wire [15:0] end_station;
 	wire [15:0] pay_money;
 	wire [15:0] recharge_money;
+	//数码管对应值
 	wire [3:0] segdisp_state;
 	key44 U1
 	(
