@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-
+//hello
 module hx75_key_7seg(
 	input sys_clk,  //50MHZ
 	input [3:0] row,  //ÐÐ

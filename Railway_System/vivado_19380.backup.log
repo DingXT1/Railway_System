@@ -3,16 +3,16 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Sep  5 16:33:39 2024
-# Process ID: 6172
-# Current directory: C:/Users/86182/Documents/GitHub/Railway_System/Railway_System
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20764 C:\Users\86182\Documents\GitHub\Railway_System\Railway_System\hx75_key_7seg.xpr
-# Log file: C:/Users/86182/Documents/GitHub/Railway_System/Railway_System/vivado.log
-# Journal file: C:/Users/86182/Documents/GitHub/Railway_System/Railway_System\vivado.jou
+# Start of session at: Thu Sep  5 16:06:57 2024
+# Process ID: 19380
+# Current directory: C:/Users/86182/Desktop/hx75_key_7seg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18696 C:\Users\86182\Desktop\hx75_key_7seg\hx75_key_7seg.xpr
+# Log file: C:/Users/86182/Desktop/hx75_key_7seg/vivado.log
+# Journal file: C:/Users/86182/Desktop/hx75_key_7seg\vivado.jou
 # Running On: XitongDing, OS: Windows, CPU Frequency: 3194 MHz, CPU Physical cores: 16, Host memory: 33492 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/86182/Documents/GitHub/Railway_System/Railway_System/hx75_key_7seg.xpr
+open_project C:/Users/86182/Desktop/hx75_key_7seg/hx75_key_7seg.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at E:/fpga/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at E:/fpga/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at E:/fpga/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
@@ -92,15 +92,13 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at E:/fpga/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at E:/fpga/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at E:/fpga/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'C:/Users/86182/Desktop/hx75_key_7seg' since last save.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/86182/Documents/GitHub/Railway_System/Railway_System/hx75_key_7seg.gen/sources_1'.
-WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/86182/Documents/GitHub/Railway_System/Railway_System/hx75_key_7seg.ip_user_files'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/86182/Desktop/hx75_key_7seg/hx75_key_7seg.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/fpga/Vivado/2023.2/data/ip'.
-open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1564.215 ; gain = 431.008
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1492.438 ; gain = 284.152
 update_compile_order -fileset sources_1
-eexit
-INFO: [Common 17-206] Exiting Vivado at Thu Sep  5 16:34:30 2024...
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Sep  5 16:15:17 2024...
