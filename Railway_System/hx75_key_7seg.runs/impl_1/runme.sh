@@ -12,9 +12,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=E:/fpga/Vivado/2023.2/ids_lite/ISE/bin/nt64;E:/fpga/Vivado/2023.2/ids_lite/ISE/lib/nt64:E:/fpga/Vivado/2023.2/bin
+  PATH=D:/F-FPGA/Vivado/2023.2/ids_lite/ISE/bin/nt64;D:/F-FPGA/Vivado/2023.2/ids_lite/ISE/lib/nt64:D:/F-FPGA/Vivado/2023.2/bin
 else
-  PATH=E:/fpga/Vivado/2023.2/ids_lite/ISE/bin/nt64;E:/fpga/Vivado/2023.2/ids_lite/ISE/lib/nt64:E:/fpga/Vivado/2023.2/bin:$PATH
+  PATH=D:/F-FPGA/Vivado/2023.2/ids_lite/ISE/bin/nt64;D:/F-FPGA/Vivado/2023.2/ids_lite/ISE/lib/nt64:D:/F-FPGA/Vivado/2023.2/bin:$PATH
 fi
 export PATH
 
@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/86182/Desktop/hx75_key_7seg/hx75_key_7seg.runs/impl_1'
+HD_PWD='Z:/FPGA/Railway_System/Railway_System/hx75_key_7seg.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,7 +42,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log hx75_key_7seg.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source hx75_key_7seg.tcl -notrace
 
 

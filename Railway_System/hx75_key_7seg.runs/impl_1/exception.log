@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file Z:\FPGA\Railway_System\Railway_System\hx75_key_7seg.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限

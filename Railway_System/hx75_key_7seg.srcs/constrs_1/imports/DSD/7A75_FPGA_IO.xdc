@@ -1,14 +1,14 @@
-#------------------------------ÏµÍ³Ê±ÖÓºÍ¸´Î»-----------------------------------
+#------------------------------ÏµÍ³Ê±ï¿½ÓºÍ¸ï¿½Î»-----------------------------------
 create_clock -period 20.000 -name sys_clk [get_ports sys_clk]
 set_property -dict {PACKAGE_PIN Y18 IOSTANDARD LVCMOS33} [get_ports sys_clk]
 
-#----------------------------------°´¼ü-----------------------------------------
+#----------------------------------ï¿½ï¿½ï¿½ï¿½-----------------------------------------
 set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports {key[1]}]
 set_property -dict {PACKAGE_PIN G4 IOSTANDARD LVCMOS33} [get_ports {key[2]}]
 set_property -dict {PACKAGE_PIN P19 IOSTANDARD LVCMOS33} [get_ports {key[3]}]
 set_property -dict {PACKAGE_PIN R19 IOSTANDARD LVCMOS33} [get_ports {key[4]}]
 
-#-----------------------------------Æ¹ÅÒ¿ª¹ØÒý½Å--------------------------------------
+#-----------------------------------Æ¹ï¿½Ò¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½--------------------------------------
 set_property -dict {PACKAGE_PIN N14 IOSTANDARD LVCMOS33} [get_ports {sw[1]}]
 set_property -dict {PACKAGE_PIN P16 IOSTANDARD LVCMOS33} [get_ports {sw[2]}]
 set_property -dict {PACKAGE_PIN R17 IOSTANDARD LVCMOS33} [get_ports {sw[3]}]
@@ -20,10 +20,10 @@ set_property -dict {PACKAGE_PIN V7 IOSTANDARD LVCMOS33} [get_ports {led[2]}]
 set_property -dict {PACKAGE_PIN W7 IOSTANDARD LVCMOS33} [get_ports {led[3]}]
 set_property -dict {PACKAGE_PIN AB7 IOSTANDARD LVCMOS33} [get_ports {led[4]}]
 
-#-----------------------------------·äÃùÆ÷--------------------------------------
+#-----------------------------------ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½--------------------------------------
 set_property -dict {PACKAGE_PIN P20 IOSTANDARD LVCMOS33} [get_ports beep]
 
-#-----------------------------------TF¿¨----------------------------------------
+#-----------------------------------TFï¿½ï¿½----------------------------------------
 set_property -dict {PACKAGE_PIN AB6 IOSTANDARD LVCMOS33} [get_ports sd_miso_DAT0]
 set_property -dict {PACKAGE_PIN Y8 IOSTANDARD LVCMOS33} [get_ports sd_mosi_CMD]
 set_property -dict {PACKAGE_PIN AB8 IOSTANDARD LVCMOS33} [get_ports sd_clk]
@@ -35,7 +35,7 @@ set_property -dict {PACKAGE_PIN V8 IOSTANDARD LVCMOS33} [get_ports sd_DAT2]
 set_property -dict {PACKAGE_PIN W20 IOSTANDARD LVCMOS33} [get_ports uart_RXD]
 set_property -dict {PACKAGE_PIN W19 IOSTANDARD LVCMOS33} [get_ports uart_TXD]
 
-#-----------------------------------ADCÒý½Å·ÖÅä----------------------------------------
+#-----------------------------------ADCï¿½ï¿½ï¿½Å·ï¿½ï¿½ï¿½----------------------------------------
 
 set_property PACKAGE_PIN M9 [get_ports vn_in]
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
@@ -43,17 +43,17 @@ set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
 connect_debug_port dbg_hub/clk [get_nets sys_clk_IBUF_BUFG]
 
-#Ô´ÂëÀïÎ´ÓÃµ½µÄXDCÒý½Åset_property PACKAGE_PIN L10 [get_ports vn_in]
+#Ô´ï¿½ï¿½ï¿½ï¿½Î´ï¿½Ãµï¿½ï¿½ï¿½XDCï¿½ï¿½ï¿½ï¿½set_property PACKAGE_PIN L10 [get_ports vn_in]
 
-#--------------------------------ÊýÂë¹Ü-----------------------------------------
-set_property -dict {PACKAGE_PIN AB18 IOSTANDARD LVCMOS33} [get_ports {seg_led[0]}]
-set_property -dict {PACKAGE_PIN U17  IOSTANDARD LVCMOS33} [get_ports {seg_led[1]}]
-set_property -dict {PACKAGE_PIN U18  IOSTANDARD LVCMOS33} [get_ports {seg_led[2]}]
-set_property -dict {PACKAGE_PIN P14  IOSTANDARD LVCMOS33} [get_ports {seg_led[3]}]
-set_property -dict {PACKAGE_PIN R14  IOSTANDARD LVCMOS33} [get_ports {seg_led[4]}]
-set_property -dict {PACKAGE_PIN R18  IOSTANDARD LVCMOS33} [get_ports {seg_led[5]}]
-set_property -dict {PACKAGE_PIN T18  IOSTANDARD LVCMOS33} [get_ports {seg_led[6]}]
-set_property -dict {PACKAGE_PIN N17  IOSTANDARD LVCMOS33} [get_ports {seg_led[7]}]
+#--------------------------------ï¿½ï¿½ï¿½ï¿½ï¿½-----------------------------------------
+set_property -dict {PACKAGE_PIN AB18 IOSTANDARD LVCMOS33} [get_ports {seg_value[0]}]
+set_property -dict {PACKAGE_PIN U17  IOSTANDARD LVCMOS33} [get_ports {seg_value[1]}]
+set_property -dict {PACKAGE_PIN U18  IOSTANDARD LVCMOS33} [get_ports {seg_value[2]}]
+set_property -dict {PACKAGE_PIN P14  IOSTANDARD LVCMOS33} [get_ports {seg_value[3]}]
+set_property -dict {PACKAGE_PIN R14  IOSTANDARD LVCMOS33} [get_ports {seg_value[4]}]
+set_property -dict {PACKAGE_PIN R18  IOSTANDARD LVCMOS33} [get_ports {seg_value[5]}]
+set_property -dict {PACKAGE_PIN T18  IOSTANDARD LVCMOS33} [get_ports {seg_value[6]}]
+set_property -dict {PACKAGE_PIN N17  IOSTANDARD LVCMOS33} [get_ports {seg_value[7]}]
 set_property -dict {PACKAGE_PIN AA18 IOSTANDARD LVCMOS33} [get_ports {seg_sel[0]}]
 set_property -dict {PACKAGE_PIN W17  IOSTANDARD LVCMOS33} [get_ports {seg_sel[1]}]
 set_property -dict {PACKAGE_PIN V17  IOSTANDARD LVCMOS33} [get_ports {seg_sel[2]}]
@@ -63,7 +63,7 @@ set_property -dict {PACKAGE_PIN V19  IOSTANDARD LVCMOS33} [get_ports {seg_sel[5]
 set_property -dict {PACKAGE_PIN V18  IOSTANDARD LVCMOS33} [get_ports {seg_sel[6]}]
 set_property -dict {PACKAGE_PIN Y19  IOSTANDARD LVCMOS33} [get_ports {seg_sel[7]}]
 
-#--------------------------------VGA½Ó¿ÚÈ¡RGB×î¸ßÎ»-----------------------------------------
+#--------------------------------VGAï¿½Ó¿ï¿½È¡RGBï¿½ï¿½ï¿½Î»-----------------------------------------
 set_property PACKAGE_PIN R16 [get_ports VGA_VSYNC]
 set_property PACKAGE_PIN P15 [get_ports VGA_HSYNC]
 set_property PACKAGE_PIN T20 [get_ports {VGA_D[0]}]  //VGA D11
@@ -89,7 +89,7 @@ set_property PACKAGE_PIN V13 [get_ports tmds_clk_p_A]
 
 set_property IOSTANDARD LVCMOS33 [get_ports hpdin]
 set_property PACKAGE_PIN AB12 [get_ports hpdin]
-#Ô´ÂëÀïÎ´ÓÃµ½µÄHDMIÒý½Åset_property PACKAGE_PIN T15 [get_ports {tmds_data_n_A[0]}]
+#Ô´ï¿½ï¿½ï¿½ï¿½Î´ï¿½Ãµï¿½ï¿½ï¿½HDMIï¿½ï¿½ï¿½ï¿½set_property PACKAGE_PIN T15 [get_ports {tmds_data_n_A[0]}]
                        set_property PACKAGE_PIN W16 [get_ports {tmds_data_n_A[1]}]
                        set_property PACKAGE_PIN U16 [get_ports {tmds_data_n_A[2]}]
                        set_property IOSTANDARD TMDS_33 [get_ports {tmds_data_n_A[2]}]
@@ -109,7 +109,7 @@ set_property IOSTANDARD TMDS_33 [get_ports tmds_clk_p_A]
 set_property PACKAGE_PIN W11 [get_ports tmds_clk_p_A]
 set_property IOSTANDARD LVCMOS33 [get_ports hpdin]
 set_property PACKAGE_PIN W14 [get_ports hpdin]
-#Ô´ÂëÀïÎ´ÓÃµ½µÄHDMIÒý½Åset_property PACKAGE_PIN AB10 [get_ports {tmds_data_n_A[0]}]
+#Ô´ï¿½ï¿½ï¿½ï¿½Î´ï¿½Ãµï¿½ï¿½ï¿½HDMIï¿½ï¿½ï¿½ï¿½set_property PACKAGE_PIN AB10 [get_ports {tmds_data_n_A[0]}]
                        set_property PACKAGE_PIN AA11 [get_ports {tmds_data_n_A[1]}]
                        set_property PACKAGE_PIN W10 [get_ports {tmds_data_n_A[2]}]
                        set_property IOSTANDARD TMDS_33 [get_ports {tmds_data_n_A[2]}]
@@ -118,7 +118,7 @@ set_property PACKAGE_PIN W14 [get_ports hpdin]
                        set_property IOSTANDARD TMDS_33 [get_ports tmds_clk_n_A]
                        set_property PACKAGE_PIN W12 [get_ports tmds_clk_n_A]
 
-#--------------------------------OV5640ÉãÏñÍ·------------------------------------------
+#--------------------------------OV5640ï¿½ï¿½ï¿½ï¿½Í·------------------------------------------
 create_clock -period 40.000 -name cmos_pclk [get_ports cam_pclk]
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets cam_pclk_IBUF]
 set_property -dict {PACKAGE_PIN C13 IOSTANDARD LVCMOS33} [get_ports cam_pclk]
@@ -137,7 +137,7 @@ set_property -dict {PACKAGE_PIN B15 IOSTANDARD LVCMOS33} [get_ports cam_href]
 set_property -dict {PACKAGE_PIN F15 IOSTANDARD LVCMOS33} [get_ports cam_scl]
 set_property -dict {PACKAGE_PIN F13 IOSTANDARD LVCMOS33} [get_ports cam_sda]
 
-#-----------------------------------ÒÔÌ«Íø-----------------------------------------
+#-----------------------------------ï¿½ï¿½Ì«ï¿½ï¿½-----------------------------------------
 set_property -dict {PACKAGE_PIN A20 IOSTANDARD LVCMOS33} [get_ports eth_rst_n]
 set_property -dict {PACKAGE_PIN D17 IOSTANDARD LVCMOS33} [get_ports eth_rxc]
 set_property -dict {PACKAGE_PIN C17 IOSTANDARD LVCMOS33} [get_ports eth_rx_ctl]
@@ -154,7 +154,7 @@ set_property -dict {PACKAGE_PIN B17 IOSTANDARD LVCMOS33} [get_ports {eth_txd[1]}
 set_property -dict {PACKAGE_PIN B18 IOSTANDARD LVCMOS33} [get_ports {eth_txd[2]}]
 set_property -dict {PACKAGE_PIN E19 IOSTANDARD LVCMOS33} [get_ports {eth_txd[3]}]
 
-#------------------------------J1À©Õ¹¿ÚÒý½Å-----------------------------------
+#------------------------------J1ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-----------------------------------
 set_property -dict {PACKAGE_PIN J16 IOSTANDARD LVCMOS33} [get_ports {P1IO[0]}]
 set_property -dict {PACKAGE_PIN H13 IOSTANDARD LVCMOS33} [get_ports {P1IO[1]}]
 set_property -dict {PACKAGE_PIN G13 IOSTANDARD LVCMOS33} [get_ports {P1IO[2]}]
@@ -192,7 +192,7 @@ set_property -dict {PACKAGE_PIN N18 IOSTANDARD LVCMOS33} [get_ports {P1IO[33]}]
 set_property -dict {PACKAGE_PIN N19 IOSTANDARD LVCMOS33} [get_ports {P1IO[34]}]
 set_property -dict {PACKAGE_PIN N20 IOSTANDARD LVCMOS33} [get_ports {P1IO[35]}]
 
-#------------------------------J2À©Õ¹¿ÚÒý½Å-----------------------------------
+#------------------------------J2ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-----------------------------------
 set_property -dict {PACKAGE_PIN T3  IOSTANDARD LVCMOS33} [get_ports {row[0]}]
 set_property -dict {PACKAGE_PIN T1  IOSTANDARD LVCMOS33} [get_ports {row[1]}]
 set_property -dict {PACKAGE_PIN U1  IOSTANDARD LVCMOS33} [get_ports {row[2]}]
@@ -244,7 +244,7 @@ set_property -dict {PACKAGE_PIN T6  IOSTANDARD LVCMOS33} [get_ports {P2IO[34]}]
 set_property -dict {PACKAGE_PIN Y6  IOSTANDARD LVCMOS33} [get_ports {P2IO[35]}]
 
 #------------------------------------SPI-------------------------------------------
-#SPI Ïà¹ØÉèÖÃ
+#SPI ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 set_property BITSTREAM.CONFIG.SPI_BUSWIDTH 4 [current_design]
 set_property CONFIG_MODE SPIx4 [current_design]
 set_property BITSTREAM.CONFIG.CONFIGRATE 50 [current_design]
