@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc rfile:../../../hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:Z:/FPGA/Railway_System/Railway_System_V3/hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc rfile:../../../hx75_key_7seg.srcs/constrs_1/imports/DSD/7A75_FPGA_IO.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN Y18 IOSTANDARD LVCMOS33} [get_ports sys_clk]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

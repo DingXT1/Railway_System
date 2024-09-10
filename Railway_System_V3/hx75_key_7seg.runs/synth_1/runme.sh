@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/synth_1'
+HD_PWD='Z:/FPGA/Railway_System/Railway_System_V3/hx75_key_7seg.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -29,6 +29,7 @@ output reg [15:0] refer_money//数码管制，不是十进制
     
     reg [3:0]ten_unit;
     reg [3:0]one_unit;
+    reg [7:0]test;
     initial 
     begin
         refer_money=16'b1111_1001_1111_1001;

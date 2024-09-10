@@ -1,14 +1,15 @@
 ////////////////////////////////////////////////////
 module Select(
 input clk,
-input start_station_value,
-input end_station_value,
+input [7:0] start_station_value,
+input [7:0] end_station_value,
 output reg  [7:0]price
 );
 initial 
 begin
     price=0;
 end
+
 always @(clk) begin
 	
 if(start_station_value == 0 && end_station_value == 0)

@@ -6,7 +6,7 @@ module top_design(
 	input [3:0] row,  //行
 	output [3:0] col,   //列
 	output [7:0] seg_sel,    //4个数码管选通信号输出  
-	output  [7:0]  seg_value,   //段码输出，正电平
+	output  [7:0] seg_value,   //段码输出，正电平
 	output [4:1]led    // 去抖后的开关输出信号
     );
 	wire[3:0] key_value;

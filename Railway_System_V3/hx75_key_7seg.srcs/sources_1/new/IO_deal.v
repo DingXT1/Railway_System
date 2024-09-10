@@ -97,7 +97,7 @@ begin
             default :begin segdisp_state = segdisp_state +1;  end
         endcase 
          start_station [7] = 1;//共极，不用管
-         start_station_value=start_ten_unit*10+start_one_unit;
+         
          flag=1;
     end
     //可能语法有问题
@@ -117,7 +117,7 @@ begin
             default :begin segdisp_state=segdisp_state+1;end
         endcase
 		 start_station [15] =1;//共极，不用管
-         start_station_value=start_ten_unit*10+start_one_unit;
+         
 		 flag=1;
     end
     
@@ -126,20 +126,20 @@ begin
     
     begin
         case (key_value)
-            4'h0: begin end_station [6:0] = 7'b1000000;  end_ten_unit = 0*10; end
-            4'h1: begin end_station [6:0] = 7'b1111001;  end_ten_unit = 1*10; end
-            4'h2: begin end_station [6:0] = 7'b0100100;  end_ten_unit = 2*10; end  
-            4'h3: begin end_station [6:0] = 7'b0110000;  end_ten_unit = 3*10; end
-            4'h4: begin end_station [6:0] = 7'b0011001;  end_ten_unit = 4*10; end  
-            4'h5: begin end_station [6:0] = 7'b0010010;  end_ten_unit = 5*10; end
-            4'h6: begin end_station [6:0] = 7'b0000010;  end_ten_unit = 6*10; end 
-            4'h7: begin end_station [6:0] = 7'b1111000;  end_ten_unit = 7*10; end 
-            4'h8: begin end_station [6:0] = 7'b0000000;  end_ten_unit = 8*10; end 
-            4'h9: begin end_station [6:0] = 7'b0010000;  end_ten_unit = 9*10; end 
+            4'h0: begin end_station [6:0] = 7'b1000000;  end_ten_unit = 0; end
+            4'h1: begin end_station [6:0] = 7'b1111001;  end_ten_unit = 1; end
+            4'h2: begin end_station [6:0] = 7'b0100100;  end_ten_unit = 2; end  
+            4'h3: begin end_station [6:0] = 7'b0110000;  end_ten_unit = 3; end
+            4'h4: begin end_station [6:0] = 7'b0011001;  end_ten_unit = 4; end  
+            4'h5: begin end_station [6:0] = 7'b0010010;  end_ten_unit = 5; end
+            4'h6: begin end_station [6:0] = 7'b0000010;  end_ten_unit = 6; end 
+            4'h7: begin end_station [6:0] = 7'b1111000;  end_ten_unit = 7; end 
+            4'h8: begin end_station [6:0] = 7'b0000000;  end_ten_unit = 8; end 
+            4'h9: begin end_station [6:0] = 7'b0010000;  end_ten_unit = 9; end 
             default :begin segdisp_state=segdisp_state+1;end
         endcase 
          end_station [7] = 1;
-         end_station_value=end_ten_unit*10+end_one_unit;
+         
          flag=1;
     end
     
@@ -159,9 +159,10 @@ begin
             default :begin segdisp_state=segdisp_state+1;end
         endcase
 		end_station [15] = 1;
-		end_station_value=end_ten_unit*10+end_one_unit;
+		
 		flag=1;
     end
-    
+    start_station_value=start_ten_unit*10+start_one_unit;
+    end_station_value=end_ten_unit*10+end_one_unit;
 end
 endmodule

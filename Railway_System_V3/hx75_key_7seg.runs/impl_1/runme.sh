@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='Z:/FPGA/Railway_System/Railway_System_V2/hx75_key_7seg.runs/impl_1'
+HD_PWD='Z:/FPGA/Railway_System/Railway_System_V3/hx75_key_7seg.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,7 +42,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log top_design.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_design.tcl -notrace
 
 
