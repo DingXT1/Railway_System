@@ -34,6 +34,9 @@ module top_design(
 	wire [7:0] ticket_hand_value;
 	wire [15:0] ticket_hand_show;
 	wire [31:0] total_hand_show;
+	wire [31:0] recharge_hand_show;
+	wire [31:0] pay_hand_show;
+	wire [13:0] pay_hand_coin;
 	//数码管对应值
 	wire [3:0] segdisp_state;
 	
@@ -85,6 +88,9 @@ module top_design(
         .price_hand_show(price_hand_show),
         .ticket_hand_show(ticket_hand_show),
         .total_hand_show(total_hand_show),
+        .pay_hand_show(pay_hand_show),//手动输入价钱【8+8+8+8】
+        .recharge_hand_show(recharge_hand_show),//手动找零价钱【8+8+8+8】
+        
 		.segdisp_state(segdisp_state),
 		.seg_sel(seg_sel),
 		.seg_value(seg_value)  
@@ -112,6 +118,7 @@ module top_design(
     num2seg U6(
         .clk(sys_clk),//50MHZ
         .pay_auto_coin( pay_auto_coin),
+        .pay_hand_coin(pay_hand_coin),
         .ticket_num(ticket_num),
         .price(price),
         .refer_money(refer_money),//数码管制，不是十进制
@@ -120,15 +127,19 @@ module top_design(
         .recharge_auto(recharge_auto),//数码管制，不是十进制
         .ticket_hand_value(ticket_hand_value),
         .price_hand_value(price_hand_value),
-        .total_hand_show(total_hand_show)//数码管制，不是十进制
+        .total_hand_show(total_hand_show),//数码管制，不是十进制
+        .pay_hand_show(pay_hand_show),//数码管制，不是十进制
+        .recharge_hand_show(recharge_hand_show)//数码管制，不是十进制
     );
     
     //按钮模块
     button U7(
         .clk(sys_clk),//50MHZ              
         .key(key),      
+        .top_state(top_state),
         .ticket_num(ticket_num),
-        .pay_auto_coin(pay_auto_coin)   
+        .pay_auto_coin(pay_auto_coin),
+        .pay_hand_coin(pay_hand_coin)
     );
     
     //手动模块

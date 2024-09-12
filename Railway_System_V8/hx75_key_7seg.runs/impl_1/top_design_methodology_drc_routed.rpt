@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Thu Sep 12 14:39:57 2024
+| Date         : Thu Sep 12 16:15:53 2024
 | Host         : SaverZY running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_design_methodology_drc_routed.rpt -pb top_design_methodology_drc_routed.pb -rpx top_design_methodology_drc_routed.rpx
 | Design       : top_design
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 223
+             Violations found: 237
 +-----------+------------------+--------------------------------+------------+
 | Rule      | Severity         | Description                    | Violations |
 +-----------+------------------+--------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 182        |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 196        |
 | LUTAR-1   | Warning          | LUT drives async reset alert   | 4          |
 | TIMING-18 | Warning          | Missing input or output delay  | 28         |
 | TIMING-20 | Warning          | Non-clocked latch              | 8          |
@@ -928,20 +928,90 @@ Related violations: <none>
 
 TIMING-17#179 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pos_ticket_num_reg[0]/C is not reached by a timing clock
+The clock pin U7/pay_hand_coin_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#180 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pos_ticket_num_reg[1]/C is not reached by a timing clock
+The clock pin U7/pay_hand_coin_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#181 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pos_ticket_num_reg[2]/C is not reached by a timing clock
+The clock pin U7/pay_hand_coin_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#182 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pay_hand_coin_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#183 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pay_hand_coin_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#184 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pay_hand_coin_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#185 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pay_hand_coin_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#186 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pay_hand_coin_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#187 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pay_hand_coin_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#188 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pay_hand_coin_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#189 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pay_hand_coin_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#190 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pay_hand_coin_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#191 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pay_hand_coin_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#192 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pay_hand_coin_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#193 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pos_ticket_num_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#194 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pos_ticket_num_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#195 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pos_ticket_num_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#196 Critical Warning
 Non-clocked sequential cell  
 The clock pin U7/pos_ticket_num_reg[3]/C is not reached by a timing clock
 Related violations: <none>
