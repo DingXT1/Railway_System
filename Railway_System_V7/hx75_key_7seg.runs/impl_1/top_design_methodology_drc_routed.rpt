@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Thu Sep 12 13:52:06 2024
+| Date         : Thu Sep 12 14:20:41 2024
 | Host         : SaverZY running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_design_methodology_drc_routed.rpt -pb top_design_methodology_drc_routed.pb -rpx top_design_methodology_drc_routed.rpx
 | Design       : top_design
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 191
+             Violations found: 215
 +-----------+------------------+--------------------------------+------------+
 | Rule      | Severity         | Description                    | Violations |
 +-----------+------------------+--------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 150        |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 174        |
 | LUTAR-1   | Warning          | LUT drives async reset alert   | 4          |
 | TIMING-18 | Warning          | Missing input or output delay  | 28         |
 | TIMING-20 | Warning          | Non-clocked latch              | 8          |
@@ -403,385 +403,505 @@ Related violations: <none>
 
 TIMING-17#74 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[0]/C is not reached by a timing clock
+The clock pin U2/phv_one_unit_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#75 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[10]/C is not reached by a timing clock
+The clock pin U2/phv_one_unit_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#76 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[11]/C is not reached by a timing clock
+The clock pin U2/phv_one_unit_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#77 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[12]/C is not reached by a timing clock
+The clock pin U2/phv_one_unit_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#78 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[13]/C is not reached by a timing clock
+The clock pin U2/phv_ten_unit_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#79 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[14]/C is not reached by a timing clock
+The clock pin U2/phv_ten_unit_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#80 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[1]/C is not reached by a timing clock
+The clock pin U2/phv_ten_unit_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#81 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[2]/C is not reached by a timing clock
+The clock pin U2/phv_ten_unit_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#82 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[3]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#83 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[4]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#84 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[5]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#85 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[6]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#86 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[8]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#87 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/price_hand_show_reg[9]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#88 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/segdisp_state_reg[0]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#89 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/segdisp_state_reg[1]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#90 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/segdisp_state_reg[2]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#91 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_one_unit_reg[0]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#92 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_one_unit_reg[1]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#93 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_one_unit_reg[2]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#94 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_one_unit_reg[3]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#95 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[0]/C is not reached by a timing clock
+The clock pin U2/price_hand_show_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#96 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[10]/C is not reached by a timing clock
+The clock pin U2/price_hand_value_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#97 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[11]/C is not reached by a timing clock
+The clock pin U2/price_hand_value_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#98 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[12]/C is not reached by a timing clock
+The clock pin U2/price_hand_value_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#99 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[13]/C is not reached by a timing clock
+The clock pin U2/price_hand_value_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#100 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[14]/C is not reached by a timing clock
+The clock pin U2/price_hand_value_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#101 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[1]/C is not reached by a timing clock
+The clock pin U2/price_hand_value_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#102 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[2]/C is not reached by a timing clock
+The clock pin U2/price_hand_value_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#103 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[3]/C is not reached by a timing clock
+The clock pin U2/price_hand_value_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#104 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[4]/C is not reached by a timing clock
+The clock pin U2/segdisp_state_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#105 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[5]/C is not reached by a timing clock
+The clock pin U2/segdisp_state_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#106 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[6]/C is not reached by a timing clock
+The clock pin U2/segdisp_state_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#107 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[8]/C is not reached by a timing clock
+The clock pin U2/start_one_unit_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#108 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_reg[9]/C is not reached by a timing clock
+The clock pin U2/start_one_unit_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#109 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_value_reg[0]/C is not reached by a timing clock
+The clock pin U2/start_one_unit_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#110 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_value_reg[1]/C is not reached by a timing clock
+The clock pin U2/start_one_unit_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#111 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_value_reg[2]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#112 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_value_reg[3]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#113 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_value_reg[4]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#114 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_value_reg[5]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#115 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_value_reg[6]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#116 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_station_value_reg[7]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#117 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_ten_unit_reg[0]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#118 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_ten_unit_reg[1]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#119 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_ten_unit_reg[2]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#120 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/start_ten_unit_reg[3]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#121 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[0]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#122 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[10]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#123 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[11]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#124 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[12]/C is not reached by a timing clock
+The clock pin U2/start_station_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#125 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[13]/C is not reached by a timing clock
+The clock pin U2/start_station_value_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#126 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[14]/C is not reached by a timing clock
+The clock pin U2/start_station_value_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#127 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[1]/C is not reached by a timing clock
+The clock pin U2/start_station_value_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#128 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[2]/C is not reached by a timing clock
+The clock pin U2/start_station_value_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#129 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[3]/C is not reached by a timing clock
+The clock pin U2/start_station_value_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#130 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[4]/C is not reached by a timing clock
+The clock pin U2/start_station_value_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#131 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[5]/C is not reached by a timing clock
+The clock pin U2/start_station_value_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#132 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[6]/C is not reached by a timing clock
+The clock pin U2/start_station_value_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#133 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[8]/C is not reached by a timing clock
+The clock pin U2/start_ten_unit_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#134 Critical Warning
 Non-clocked sequential cell  
-The clock pin U2/ticket_hand_show_reg[9]/C is not reached by a timing clock
+The clock pin U2/start_ten_unit_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#135 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/neg_ticket_num_reg[0]/C is not reached by a timing clock
+The clock pin U2/start_ten_unit_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#136 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/neg_ticket_num_reg[1]/C is not reached by a timing clock
+The clock pin U2/start_ten_unit_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#137 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/neg_ticket_num_reg[2]/C is not reached by a timing clock
+The clock pin U2/thv_one_unit_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#138 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/neg_ticket_num_reg[3]/C is not reached by a timing clock
+The clock pin U2/thv_one_unit_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#139 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pay_auto_coin_reg[0]/C is not reached by a timing clock
+The clock pin U2/thv_one_unit_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#140 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pay_auto_coin_reg[1]/C is not reached by a timing clock
+The clock pin U2/thv_one_unit_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#141 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pay_auto_coin_reg[2]/C is not reached by a timing clock
+The clock pin U2/thv_ten_unit_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#142 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pay_auto_coin_reg[3]/C is not reached by a timing clock
+The clock pin U2/thv_ten_unit_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#143 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pay_auto_coin_reg[4]/C is not reached by a timing clock
+The clock pin U2/thv_ten_unit_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#144 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pay_auto_coin_reg[5]/C is not reached by a timing clock
+The clock pin U2/thv_ten_unit_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#145 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pay_auto_coin_reg[6]/C is not reached by a timing clock
+The clock pin U2/ticket_hand_show_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#146 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pay_auto_coin_reg[7]/C is not reached by a timing clock
+The clock pin U2/ticket_hand_show_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#147 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pos_ticket_num_reg[0]/C is not reached by a timing clock
+The clock pin U2/ticket_hand_show_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#148 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pos_ticket_num_reg[1]/C is not reached by a timing clock
+The clock pin U2/ticket_hand_show_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#149 Critical Warning
 Non-clocked sequential cell  
-The clock pin U7/pos_ticket_num_reg[2]/C is not reached by a timing clock
+The clock pin U2/ticket_hand_show_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#150 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_show_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#151 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_show_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#152 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_show_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#153 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_show_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#154 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_show_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#155 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_show_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#156 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_show_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#157 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_show_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#158 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_show_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#159 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_value_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#160 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_value_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#161 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_value_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#162 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_value_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#163 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_value_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#164 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_value_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#165 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_value_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#166 Critical Warning
+Non-clocked sequential cell  
+The clock pin U2/ticket_hand_value_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#167 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/neg_ticket_num_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#168 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/neg_ticket_num_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#169 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/neg_ticket_num_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#170 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/neg_ticket_num_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#171 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pos_ticket_num_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#172 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pos_ticket_num_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#173 Critical Warning
+Non-clocked sequential cell  
+The clock pin U7/pos_ticket_num_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#174 Critical Warning
 Non-clocked sequential cell  
 The clock pin U7/pos_ticket_num_reg[3]/C is not reached by a timing clock
 Related violations: <none>

@@ -11,8 +11,9 @@ module seg_dtxs(
     input [15:0]  pay_auto,   //输入的钱【8+8】
     input [15:0]  recharge_auto,   //找零的钱【8+8】
     /////////////////////////////////////////////
-    input [15:0] price_hand_show,
-    input [15:0] ticket_hand_show,
+    input [15:0] price_hand_show,//手动单票价【8+8】
+    input [15:0] ticket_hand_show,//手动票数【8+8】
+    input [31:0] total_hand_show,//手动总票价【8+8+8+8】
     
     input [3:0]  segdisp_state,//数码管显示状态的4位数值。
     output reg [7:0] seg_value,        // 输出 8 位数码管【显示数据】
@@ -103,36 +104,44 @@ module seg_dtxs(
                 ///////////////////////////////////////////////
                 //状态1
                 if(top_state==4'b0001)begin seg_value = pay_auto[7:0]; end
+                //状态2
+                if(top_state==4'b0010)begin seg_value = total_hand_show[7:0]; end
                 //状态0
                 else begin seg_value = refer_money[7:0];  end 
                 ///////////////////////////////////////////////
                end
             5: begin 
                 seg_sel= 8'b1111_1011;
-                
+                ///////////////////////////////////////////////
                 //状态1
                 if(top_state==4'b0001)begin seg_value = pay_auto[15:8];  end
+                 //状态2
+                if(top_state==4'b0010)begin seg_value = total_hand_show[15:8]; end
                 //状态0
                 else begin seg_value = refer_money[15:8];  end       
-                
+                ///////////////////////////////////////////////
                end
             6: begin 
                 seg_sel= 8'b1111_1101;
-                
+                ///////////////////////////////////////////////
                 //状态1
                 if(top_state==4'b0001)begin seg_value = recharge_auto[7:0]; end
+                 //状态2
+                if(top_state==4'b0010)begin seg_value = total_hand_show[23:16]; end
                 //状态0
                 else begin seg_value = total_money[7:0];  end
-                
+                ///////////////////////////////////////////////
                 end
             7: begin 
                 seg_sel= 8'b1111_1110;
-                
+                ///////////////////////////////////////////////
                 //状态1
                 if(top_state==4'b0001)begin seg_value = recharge_auto[15:8]; end
+                 //状态2
+                if(top_state==4'b0010)begin seg_value = total_hand_show[31:24]; end
                 //状态0
                 else begin seg_value = total_money[15:8];  end
-                
+                ///////////////////////////////////////////////
                 end           
             //原则上不会执行
             default: seg_sel <= 8'b0111_1111; // 默认激活第一个数码管
